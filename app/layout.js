@@ -35,11 +35,11 @@ export default function RootLayout({ children }) {
       className={`${sourceSerif.variable} ${sourceSans.variable}`}
       suppressHydrationWarning
     >
-      <body className="min-h-screen bg-[#E9C46A] font-sans text-[#264653] antialiased dark:bg-[#264653] dark:text-white">
+      <body className="min-h-screen bg-[#F3D6DC] font-sans text-[#264653] antialiased dark:bg-[#264653] dark:text-white">
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <a
           href="#main"
-          className="absolute left-4 top-0 -translate-y-full bg-[#264653] px-4 py-2 text-white focus:translate-y-4 dark:bg-[#E9C46A] dark:text-[#264653]"
+          className="absolute left-4 top-0 -translate-y-full bg-[#264653] px-4 py-2 text-white focus:translate-y-4 dark:bg-[#F3D6DC] dark:text-[#264653]"
         >
           Skip to content
         </a>

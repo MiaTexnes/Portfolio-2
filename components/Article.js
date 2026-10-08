@@ -4,7 +4,10 @@ import CopyLinkButton from "@/components/CopyLinkButton";
 
 export default function Article({ project }) {
   return (
-    <main id="main" className="mx-auto max-w-3xl px-6 py-12">
+    <main
+      id="main"
+      className="mx-auto my-10 max-w-3xl bg-white px-6 py-12 text-[#264653] dark:border dark:border-[#F3D6DC] dark:bg-[#264653] dark:text-white"
+    >
       <Link href="/" className="text-[#2A9D8F] underline underline-offset-4">
         Back home
       </Link>

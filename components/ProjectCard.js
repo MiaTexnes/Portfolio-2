@@ -6,7 +6,7 @@ export default function ProjectCard({ project }) {
     <li className="h-full">
       <Link
         href={`/${project.slug}`}
-        className="flex h-full flex-col border border-transparent bg-white text-[#264653] dark:border-[#E9C46A] dark:bg-[#264653] dark:text-white"
+        className="flex h-full flex-col border border-transparent bg-white text-[#264653] dark:border-[#F3D6DC] dark:bg-[#264653] dark:text-white"
       >
         <Image
           src={project.image}

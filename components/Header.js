@@ -4,11 +4,11 @@ import ThemeToggle from "@/components/ThemeToggle";
 
 export default function Header() {
   return (
-    <header className="border-b-2 border-[#2A9D8F]">
+    <header className="border-b-2 border-[#2A9D8F] bg-white dark:border-[#F3D6DC] dark:bg-[#264653]">
       <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-6 py-4">
         <Link
           href="/"
-          className="font-serif text-xl text-[#2A9D8F] underline underline-offset-4"
+          className="font-serif text-xl text-[#264653] no-underline dark:text-white"
         >
           Mia Texnes
         </Link>
