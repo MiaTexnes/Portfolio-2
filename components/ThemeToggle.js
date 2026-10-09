@@ -1,19 +1,32 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
+
+function subscribe(callback) {
+  window.addEventListener("theme-change", callback);
+  return () => window.removeEventListener("theme-change", callback);
+}
+
+function getSnapshot() {
+  return document.documentElement.classList.contains("dark");
+}
+
+function getServerSnapshot() {
+  return false;
+}
 
 export default function ThemeToggle() {
-  const [isDark, setIsDark] = useState(false);
-
-  useEffect(() => {
-    setIsDark(document.documentElement.classList.contains("dark"));
-  }, []);
+  const isDark = useSyncExternalStore(
+    subscribe,
+    getSnapshot,
+    getServerSnapshot,
+  );
 
   function onToggle() {
     const next = !isDark;
     document.documentElement.classList.toggle("dark", next);
     localStorage.setItem("theme", next ? "dark" : "light");
-    setIsDark(next);
+    window.dispatchEvent(new Event("theme-change"));
   }
 
   return (
@@ -21,7 +34,7 @@ export default function ThemeToggle() {
       type="button"
       onClick={onToggle}
       aria-pressed={isDark}
-      className="rounded-sm bg-[#264653] px-4 py-2 text-white dark:bg-[#F3D6DC] dark:text-[#264653]"
+      className="rounded-full border border-[#e4e4e7] bg-white px-4 py-2 text-sm text-[#1c1c1f] dark:border-white/15 dark:bg-transparent dark:text-white"
     >
       {isDark ? "Light version" : "Dark version"}
     </button>

@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
       className={`${sourceSerif.variable} ${sourceSans.variable}`}
       suppressHydrationWarning
     >
-      <body className="min-h-screen bg-[#F3D6DC] font-sans text-[#264653] antialiased dark:bg-[#264653] dark:text-white">
+      <body className="min-h-screen bg-[#f5f5f7] font-sans text-[#1c1c1f] antialiased dark:bg-[#0e1014] dark:text-white">
         <Script id="theme-script" strategy="beforeInteractive">
           {`(function () {
             try {
@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
         </Script>
         <a
           href="#main"
-          className="absolute left-4 top-0 -translate-y-full bg-[#264653] px-4 py-2 text-white focus:translate-y-4 dark:bg-[#F3D6DC] dark:text-[#264653]"
+          className="absolute left-4 top-0 -translate-y-full rounded-full bg-[#18181b] px-4 py-2 text-white focus:translate-y-4 dark:bg-[#5b4dff]"
         >
           Skip to content
         </a>
