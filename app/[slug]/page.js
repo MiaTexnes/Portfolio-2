@@ -2,6 +2,8 @@ import { notFound } from "next/navigation";
 import projects from "@/data/projects";
 import Article from "@/components/Article";
 
+export const instant = false;
+
 export function generateStaticParams() {
   return projects.map((project) => ({ slug: project.slug }));
 }

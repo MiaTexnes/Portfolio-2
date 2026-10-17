@@ -10,12 +10,12 @@ export default function Article({ project }) {
     >
       <Link
         href="/"
-        className="text-sm text-[#4f46e5] underline underline-offset-4"
+        className="text-sm text-[#9d174d] underline underline-offset-4 dark:text-[#f9a8d4]"
       >
         Back home
       </Link>
 
-      <p className="mt-8 flex items-center gap-2 text-sm text-[#6b7280]">
+      <p className="mt-8 flex items-center gap-2 text-sm dark:text-[#e3e3e8] text-[#4b5563]">
         <span
           className="inline-block h-2 w-2 rounded-full bg-[#22c55e]"
           aria-hidden="true"
@@ -25,7 +25,7 @@ export default function Article({ project }) {
       <h1 className="mt-2 text-4xl font-semibold tracking-tight">
         {project.title}
       </h1>
-      <p className="mt-4 leading-6 text-[#3f3f46] dark:text-[#d4d4d8]">
+      <p className="mt-4 leading-6 text-[#3f3f46] dark:text-[#e3e3e8]">
         {project.description}
       </p>
 
@@ -41,7 +41,7 @@ export default function Article({ project }) {
           height={600}
           className="h-auto w-full rounded-2xl"
         />
-        <figcaption className="mt-2 text-sm text-[#6b7280]">
+        <figcaption className="mt-2 text-sm dark:text-[#e3e3e8] text-[#4b5563]">
           {project.caption}
         </figcaption>
       </figure>
@@ -51,7 +51,7 @@ export default function Article({ project }) {
           href={project.live}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-sm text-[#4f46e5] underline underline-offset-4"
+          className="text-sm text-[#9d174d] underline underline-offset-4 dark:text-[#f9a8d4]"
         >
           Live site
           <span className="sr-only"> (opens in a new tab)</span>
@@ -60,7 +60,7 @@ export default function Article({ project }) {
           href={project.readme}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-sm text-[#4f46e5] underline underline-offset-4"
+          className="text-sm text-[#9d174d] underline underline-offset-4 dark:text-[#f9a8d4]"
         >
           GitHub README
           <span className="sr-only"> (opens in a new tab)</span>

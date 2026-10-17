@@ -1,36 +1,55 @@
 import Link from "next/link";
-import projects from "@/data/projects";
 import ThemeToggle from "@/components/ThemeToggle";
 
 export default function Header() {
   return (
-    <header className="border-b border-[#ececf1] bg-[#f5f5f7] dark:border-white/10 dark:bg-[#0e1014]">
-      <div className="mx-auto max-w-6xl px-5 py-4 sm:px-6">
-        <div className="flex items-center justify-between gap-4">
-          <Link href="/" className="no-underline">
-            <span className="block text-sm font-medium text-[#1c1c1f] dark:text-white">
-              Mia Texnes
-            </span>
-            <span className="block text-xs text-[#6b7280]">
-              Front-end student
-            </span>
-          </Link>
-          <ThemeToggle />
-        </div>
-        <nav aria-label="Projects" className="mt-3 lg:mt-0">
-          <ul className="flex gap-5 overflow-x-auto lg:justify-end">
-            {projects.map((project) => (
-              <li key={project.slug} className="shrink-0">
+    <header
+      id="top"
+      className="border-b border-[#ececf1] bg-[#f5f5f7] dark:border-white/10 dark:bg-[#0e1014]"
+    >
+      <div className="relative mx-auto flex max-w-6xl flex-col gap-4 px-5 py-4 sm:px-6 md:flex-row md:items-center md:justify-between">
+        <Link href="/" className="no-underline">
+          <span className="block text-lg font-medium text-[#1c1c1f] dark:text-white">
+            Mia Texnes
+          </span>
+          <span className="block text-sm dark:text-[#e3e3e8] text-[#4b5563]">
+            Portfolio 2
+          </span>
+        </Link>
+        <p className="hidden text-xs dark:text-[#e3e3e8] tracking-[0.22em] text-[#4b5563] md:absolute md:left-1/2 md:block md:-translate-x-1/2">
+          FRONTEND DEVELOPMENT
+        </p>
+        <div className="flex flex-col items-start gap-4 md:flex-row md:items-center md:gap-8">
+          <nav aria-label="On this page">
+            <ul className="flex gap-6">
+              <li>
                 <Link
-                  href={`/${project.slug}`}
-                  className="text-sm text-[#3f3f46] no-underline dark:text-[#d4d4d8]"
+                  href="/#work"
+                  className="text-base text-[#9d174d] no-underline dark:text-[#f9a8d4]"
                 >
-                  {project.title}
+                  Projects
                 </Link>
               </li>
-            ))}
-          </ul>
-        </nav>
+              <li>
+                <Link
+                  href="/#approach"
+                  className="text-base text-[#9d174d] no-underline dark:text-[#f9a8d4]"
+                >
+                  Approach
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/#contact"
+                  className="text-base text-[#9d174d] no-underline dark:text-[#f9a8d4]"
+                >
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </nav>
+          <ThemeToggle />
+        </div>
       </div>
     </header>
   );

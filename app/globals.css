@@ -1,11 +1,10 @@
 @import "tailwindcss";
 
 /* The toggle adds class "dark" on <html>. Follow that class. */
-@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --font-sans: var(--font-source-sans), "Source Sans 3", sans-serif;
-  --font-serif: var(--font-source-serif), "Source Serif 4", serif;
 }
 
 :focus-visible {

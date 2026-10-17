@@ -19,7 +19,7 @@ export default function CopyLinkButton() {
     <button
       type="button"
       onClick={onCopy}
-      className="rounded-full bg-[#18181b] px-4 py-2 text-left text-sm text-white dark:bg-[#5b4dff]"
+      className="rounded-full bg-[#18181b] px-4 py-2 text-left text-sm text-white dark:bg-[#9d174d]"
     >
       {message}
     </button>

@@ -34,7 +34,7 @@ export default function ThemeToggle() {
       type="button"
       onClick={onToggle}
       aria-pressed={isDark}
-      className="rounded-full border border-[#e4e4e7] bg-white px-4 py-2 text-sm text-[#1c1c1f] dark:border-white/15 dark:bg-transparent dark:text-white"
+      className="rounded-full border border-[#e4e4e7] bg-white px-4 py-2 text-base text-[#1c1c1f] dark:border-white/15 dark:bg-transparent dark:text-white"
     >
       {isDark ? "Light version" : "Dark version"}
     </button>

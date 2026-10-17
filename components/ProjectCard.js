@@ -16,15 +16,25 @@ export default function ProjectCard({ project }) {
           className="h-40 w-full object-cover"
         />
         <div className="flex flex-1 flex-col gap-3 p-5">
-          <p className="text-xs tracking-wide text-[#6b7280]">
+          <p className="text-xs tracking-wide dark:text-[#e3e3e8] text-[#4b5563]">
             {project.module}
           </p>
           <h2 className="text-2xl font-semibold tracking-tight">
             {project.title}
           </h2>
-          <p className="text-sm leading-6 text-[#3f3f46] dark:text-[#d4d4d8]">
+          <p className="text-sm leading-6 text-[#3f3f46] dark:text-[#e3e3e8]">
             {project.description}
           </p>
+          <ul className="flex flex-wrap gap-2">
+            {project.tags.map((tag) => (
+              <li
+                key={tag}
+                className="rounded-full border border-[#ececf1] px-2 py-1 text-xs dark:text-[#e3e3e8] text-[#4b5563] dark:border-white/10"
+              >
+                {tag}
+              </li>
+            ))}
+          </ul>
           <p className="mt-auto text-sm font-medium">Open article</p>
         </div>
       </Link>

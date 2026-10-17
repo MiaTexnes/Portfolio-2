@@ -1,13 +1,8 @@
-import { Source_Sans_3, Source_Serif_4 } from "next/font/google";
+import { Source_Sans_3 } from "next/font/google";
 import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./globals.css";
-
-const sourceSerif = Source_Serif_4({
-  subsets: ["latin"],
-  variable: "--font-source-serif",
-});
 
 const sourceSans = Source_Sans_3({
   subsets: ["latin"],
@@ -16,14 +11,16 @@ const sourceSans = Source_Sans_3({
 
 export const metadata = {
   title: "Mia Texnes",
-  description: "Three front-end projects for an employer.",
+  description:
+    "Portfolio 2, the last Frontend Development assignment, with three course projects.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${sourceSerif.variable} ${sourceSans.variable}`}
+      data-scroll-behavior="smooth"
+      className={`${sourceSans.variable} scroll-smooth`}
       suppressHydrationWarning
     >
       <body className="min-h-screen bg-[#f5f5f7] font-sans text-[#1c1c1f] antialiased dark:bg-[#0e1014] dark:text-white">
@@ -38,13 +35,19 @@ export default function RootLayout({ children }) {
         </Script>
         <a
           href="#main"
-          className="absolute left-4 top-0 -translate-y-full rounded-full bg-[#18181b] px-4 py-2 text-white focus:translate-y-4 dark:bg-[#5b4dff]"
+          className="absolute left-4 top-0 -translate-y-full rounded-full bg-[#18181b] px-4 py-2 text-white focus:translate-y-4 dark:bg-[#9d174d]"
         >
           Skip to content
         </a>
         <Header />
         {children}
         <Footer />
+        <a
+          href="#top"
+          className="fixed bottom-5 right-5 z-50 rounded-full bg-[#18181b] px-4 py-3 text-sm text-white no-underline shadow-sm dark:bg-[#9d174d]"
+        >
+          Back to top
+        </a>
       </body>
     </html>
   );
