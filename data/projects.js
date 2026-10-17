@@ -3,6 +3,7 @@ const projects = [
     slug: "connectsphere",
     title: "ConnectSphere",
     module: "CSS Frameworks",
+    tags: ["Tailwind CSS"],
     description:
       "Log in, read a feed, and view a profile in this small social app. Tailwind styles the login page, the feed, and the profile.",
     image: "/images/connectsphere.png",
@@ -23,6 +24,7 @@ const projects = [
     slug: "loot-locker",
     title: "Loot Locker",
     module: "JavaScript Frameworks",
+    tags: ["Next.js", "Tailwind CSS"],
     description:
       "Browse products, sort the list, and keep a cart that stays after refresh. Built with Next.js, Tailwind, and a simple checkout.",
     image: "/images/loot-locker.png",
@@ -43,6 +45,7 @@ const projects = [
     slug: "pink-gavel",
     title: "Pink Gavel Auctions",
     module: "Semester Project 2",
+    tags: ["JavaScript", "HTML", "CSS"],
     description:
       "Guests can browse auctions. Students with a Noroff email can list items, place bids, and manage a profile with starting credits.",
     image: "/images/pink-gavel.png",
