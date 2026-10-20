@@ -6,11 +6,11 @@ const projects = [
     tags: ["Tailwind CSS"],
     description:
       "Log in, read a feed, and view a profile in this small social app. Tailwind styles the login page, the feed, and the profile.",
-    image: "/images/connectsphere.png",
+    image: "/images/css-frameworks.webp",
     imageAlt:
-      "Placeholder labeled ConnectSphere. Replace this file with a screenshot of the feed.",
+      "The ConnectSphere profile, with a username, follow buttons, and follower counts.",
     caption:
-      "The feed after login. Posts sit in a grid, and you can search them.",
+      "The profile after login. It shows the username, follow buttons, and follower counts.",
     live: "https://connect-sphere1.netlify.app/",
     readme:
       "https://github.com/MiaTexnes/connectsphere/blob/css-frameworks/readme.md",
@@ -27,9 +27,9 @@ const projects = [
     tags: ["Next.js", "Tailwind CSS"],
     description:
       "Browse products, sort the list, and keep a cart that stays after refresh. Built with Next.js, Tailwind, and a simple checkout.",
-    image: "/images/loot-locker.png",
+    image: "/images/javascript-frameworks.webp",
     imageAlt:
-      "Placeholder labeled Loot Locker. Replace this file with a screenshot of the shop.",
+      "The Loot Locker shop, with a search field, a sort menu, and product cards.",
     caption:
       "The shop front. Search, sort, and a cart that is still there after a refresh.",
     live: "https://lootlocker.netlify.app/",
@@ -48,9 +48,9 @@ const projects = [
     tags: ["JavaScript", "HTML", "CSS"],
     description:
       "Guests can browse auctions. Students with a Noroff email can list items, place bids, and manage a profile with starting credits.",
-    image: "/images/pink-gavel.png",
+    image: "/images/semester-project-2.webp",
     imageAlt:
-      "Placeholder labeled Pink Gavel Auctions. Replace this file with a screenshot of the auction home page.",
+      "The Pink Gavel home page, with newest listings and a browse button.",
     caption: "Auctions on the home page. A guest can look without logging in.",
     live: "https://pinkgavel.netlify.app/",
     readme:

@@ -13,7 +13,7 @@ export default function ProjectCard({ project }) {
           alt={project.imageAlt}
           width={960}
           height={600}
-          className="h-40 w-full object-cover"
+          className="h-40 w-full object-cover object-top"
         />
         <div className="flex flex-1 flex-col gap-3 p-5">
           <p className="text-xs tracking-wide dark:text-[#e3e3e8] text-[#4b5563]">
