@@ -73,11 +73,11 @@ export default function HomePage() {
             open on their own page.
           </p>
           <p className="mt-4 max-w-md leading-relaxed text-[#3f3f46] dark:text-[#e3e3e8]">
-            The ConnectSphere profile now has a username, a follow button, and a
-            following and followers area. The Loot Locker stars still need to
-            show as ★, ☆, and ½. On Pink Gavel, the carousel and the phone menu
-            need to fit the screen, and the profile text is hard to read in dark
-            mode.
+            The ConnectSphere profile now shows the username @janedoe. The
+            follow button and the follower counts were already there. Loot
+            Locker shows the rating with stars, and no longer uses a ½ mark. On
+            Pink Gavel, the carousel and the phone menu fit the screen, and the
+            profile text is readable in dark mode.
           </p>
           <p className="mt-6 max-w-md rounded-2xl border border-[#ececf1] bg-white p-4 text-sm leading-6 text-[#3f3f46] dark:border-white/10 dark:bg-[#16181e] dark:text-[#e3e3e8]">
             The card and the article use the same picture. The article is where

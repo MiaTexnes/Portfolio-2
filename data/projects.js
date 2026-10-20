@@ -15,10 +15,10 @@ const projects = [
     readme:
       "https://github.com/MiaTexnes/connectsphere/blob/css-frameworks/readme.md",
     about:
-      "ConnectSphere is a small social app from the CSS Frameworks module. You log in, read posts in a feed, and open a profile. The feed is a grid of posts, and you can search them.",
+      "ConnectSphere is a small social app from the CSS Frameworks module. You log in, read posts in a feed, and open a profile. The posts sit in one column, and you can search them.",
     tools: "Tailwind CSS styles the login page, the feed, and the profile.",
     improvement:
-      "The profile was missing the username, a follow button, and a following and followers area. Those are the parts that changed. Sort on the feed is still missing.",
+      "The profile was missing the username. It now shows @janedoe. The follow button and the follower counts were already on the page.",
   },
   {
     slug: "loot-locker",
@@ -39,7 +39,7 @@ const projects = [
       "Loot Locker is a shop. A visitor can browse products, search, and sort the list. Items added to the cart are still there after a refresh. Checkout is a simple flow.",
     tools: "Next.js, Tailwind CSS, and a simple checkout.",
     improvement:
-      "The product rating rendered oddly. The stars are text: ★ for a full star, ☆ for an empty star, and ½ for a half star. The live-site change is to fix that display. A note about 17 large commits is feedback in the PDF. It is not a change on the live site.",
+      "The product rating used to include a ½ mark. The shop now shows the rating with stars.",
   },
   {
     slug: "pink-gavel",
@@ -56,10 +56,10 @@ const projects = [
     readme:
       "https://github.com/MiaTexnes/Auction-House-Pink-Gavel/blob/main/README.md",
     about:
-      "Pink Gavel Auctions is an auction site. A guest can browse the listings without an account. A student with a Noroff email can list an item, place a bid, and manage a profile that starts with credits. Search can come back with no results, and that message already works, as do listings, bidding, credits, and the avatar.",
+      "Pink Gavel Auctions is an auction site. A guest can browse the listings without an account. A student with a Noroff email can list an item, place a bid, and manage a profile that starts with credits.",
     tools: "JavaScript, HTML, and CSS, talking to the Noroff auction API.",
     improvement:
-      "On a wide screen, the newest-listings carousel shows arrow buttons outside the cards and a horizontal scrollbar. On a phone, the open menu does not cover the page, so the welcome text and the Browse Auctions button stay visible. In dark mode, the text on the profile page has poor contrast. The change is to fit the carousel and the menu to each screen, and to make the profile text easier to read in dark mode.",
+      "The newest-listings carousel stays inside the screen, and the phone menu covers the page. The profile text is readable in dark mode.",
   },
 ];
 
