@@ -110,9 +110,6 @@ export default function HomePage() {
         id="contact"
         className="border-t border-[#ececf1] py-16 text-center dark:border-white/10"
       >
-        <p className="text-xs dark:text-[#e3e3e8] tracking-[0.16em] text-[#4b5563]">
-          CONTACT
-        </p>
         <h2 className="mt-3 text-3xl font-semibold tracking-tight">Contact</h2>
         <p className="mx-auto mt-4 max-w-lg text-[#3f3f46] dark:text-[#e3e3e8]">
           The code is public if you want a look. If you want to talk, LinkedIn
