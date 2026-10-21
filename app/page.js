@@ -69,10 +69,6 @@ export default function HomePage() {
             Pink Gavel, the carousel and the phone menu fit the screen, and the
             profile text is readable in dark mode.
           </p>
-          <p className="mt-6 max-w-md rounded-2xl border border-[#ececf1] bg-white p-4 text-sm leading-6 text-[#3f3f46] dark:border-white/10 dark:bg-[#16181e] dark:text-[#e3e3e8]">
-            The card and the article use the same picture. The article is where
-            the longer description and the improvement are written.
-          </p>
         </div>
         <div>
           <p className="text-xs dark:text-[#e3e3e8] tracking-[0.16em] text-[#4b5563]">

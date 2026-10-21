@@ -73,7 +73,7 @@ export default function Article({ project }) {
         <h2 className="text-2xl font-semibold tracking-tight">Tools</h2>
         <p>{project.tools}</p>
         <h2 className="text-2xl font-semibold tracking-tight">
-          What I would improve
+          What I changed
         </h2>
         <p>{project.improvement}</p>
       </div>
