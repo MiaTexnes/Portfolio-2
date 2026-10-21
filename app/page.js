@@ -63,8 +63,7 @@ export default function HomePage() {
             open on their own page.
           </p>
           <p className="mt-4 max-w-md leading-relaxed text-[#3f3f46] dark:text-[#e3e3e8]">
-            The ConnectSphere profile now shows the username @janedoe. The
-            follow button and the follower counts were already there. Loot
+            The ConnectSphere profile now shows the username @janedoe. Loot
             Locker shows the rating with stars, and no longer uses a ½ mark. On
             Pink Gavel, the carousel and the phone menu fit the screen, and the
             profile text is readable in dark mode.

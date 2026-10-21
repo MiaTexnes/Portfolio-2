@@ -18,7 +18,7 @@ const projects = [
       "ConnectSphere is a small social app from the CSS Frameworks module. You log in, read posts in a feed, and open a profile. The posts sit in one column, and you can search them.",
     tools: "Tailwind CSS styles the login page, the feed, and the profile.",
     improvement:
-      "The profile was missing the username. It now shows @janedoe. The follow button and the follower counts were already on the page.",
+      "The profile was missing the username. It now shows @janedoe.",
   },
   {
     slug: "loot-locker",
