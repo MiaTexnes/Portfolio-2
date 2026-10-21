@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       data-scroll-behavior="smooth"
-      className={`${sourceSans.variable} scroll-smooth`}
+      className={`${sourceSans.variable} scroll-smooth dark`}
       suppressHydrationWarning
     >
       <body className="min-h-screen bg-[#f5f5f7] font-sans text-[#1c1c1f] antialiased dark:bg-[#0e1014] dark:text-white">
@@ -30,7 +30,10 @@ export default function RootLayout({ children }) {
               if (localStorage.getItem("theme") === "dark") {
                 document.documentElement.classList.add("dark");
               }
-            } catch (e) {}
+              if (localStorage.getItem("theme") === "light") {
+    document.documentElement.classList.remove("dark");
+  }
+} catch (e) {}
           })();`}
         </Script>
         <a
