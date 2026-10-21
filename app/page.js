@@ -81,7 +81,8 @@ export default function HomePage() {
               ["Next.js", "This portfolio and Loot Locker"],
               [
                 "Tailwind CSS",
-                "This portfolio, ConnectSphere, and Loot Locker",
+                "This portfolio, ConnectSphere, Loot Locker, and Pink Gavel",
+                ,
               ],
               ["JavaScript", "Pink Gavel Auctions"],
               ["HTML and CSS", "Pink Gavel Auctions"],
