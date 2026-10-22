@@ -15,10 +15,9 @@ const projects = [
     readme:
       "https://github.com/MiaTexnes/connectsphere/blob/css-frameworks/readme.md",
     about:
-      "ConnectSphere is a small social app from the CSS Frameworks module. You log in, read posts in a feed, and open a profile. The posts sit in one column, and you can search them.",
+      "ConnectSphere is a small social app from the CSS Frameworks module. You log in, read posts in a feed, and open a profile. The posts sit in one column.",
     tools: "Tailwind CSS styles the login page, the feed, and the profile.",
-    improvement:
-      "The profile was missing the username. It now shows @janedoe.",
+    improvement: "The profile was missing the username. It now shows @janedoe.",
   },
   {
     slug: "loot-locker",
