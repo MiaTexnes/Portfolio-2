@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import CopyLinkButton from "@/components/CopyLinkButton";
 
 export default function Article({ project }) {
   return (
@@ -28,10 +27,6 @@ export default function Article({ project }) {
       <p className="mt-4 leading-6 text-[#3f3f46] dark:text-[#e3e3e8]">
         {project.description}
       </p>
-
-      <div className="mt-6">
-        <CopyLinkButton />
-      </div>
 
       <figure className="mt-8">
         <Image
